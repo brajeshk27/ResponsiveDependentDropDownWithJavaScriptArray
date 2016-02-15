@@ -1,0 +1,283 @@
+button, h1, h2, h3, h4, h5, h6, header, li, ol, p, ul {
+   margin: 0;
+   padding: 0;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+}
+
+
+
+@media only screen and (max-width: 1003px) {
+   .fordesktop {
+      display: none;
+   }
+
+   .formobile {
+      display: block;
+   }
+
+   .redemptin_wraper {
+      width: 100%;
+      float: left;
+   }
+   .mein_redeem_td {
+      width: 100%;
+      overflow: hidden;
+   }
+
+   .redeem_td {
+      width: 100%;
+      margin: 0 auto;
+      padding: 25px 0 0 0;
+   }
+
+   .locate_box {
+      width: 42%;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      color: #000;
+      padding: 10px 0 0 0;
+   }
+
+   .locate_state {
+      width: 22%;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      color: #000;
+      margin-top: 5px;
+   }
+
+      .locate_state select {
+         width: 100%;
+         font-family: Verdana, Geneva, sans-serif;
+         background-color: #d9d9d9;
+         font-size: 14px;
+         color: #000;
+         border: none;
+         height: 25px;
+      }
+
+   .locate_city {
+      width: 22%;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      color: #000;
+      margin: 5px 0px 0 20px;
+   }
+
+      .locate_city select {
+         width: 100%;
+         float: left;
+         border: none;
+         height: 25px;
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 14px;
+         color: #000;
+         background-color: #d9d9d9;
+      }
+
+   .locate_go {
+      width: 7%;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      color: #000;
+      margin: 0 0 0 25px;
+   }
+
+   .redeem_table {
+      width: 100%;
+      float: left;
+      background: #fff url(../images/redeem_table_bg.jpg) left top repeat-x;
+      height: auto;
+      margin: 20px 0 0 0;
+   }
+
+   .redeem_table_content {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0 0 0;
+   }
+   .redeem_row1 {
+      width: 24%;
+      float: left;
+      background: url(../images/redeem_row1.png) left top no-repeat;
+      height: 190px;
+      margin: 0 4px 0 0;
+   }
+
+   .row_content {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      color: #000000;
+      padding: 0 15px;
+   }
+
+      .row_content h1 {
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 14px;
+         color: #000000;
+         font-weight: bold;
+         padding: 10px 0 25px 0;
+      }
+
+      .row_content p {
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 14px;
+         color: #000000;
+      }
+}
+
+@media only screen and (min-device-width :621px) and (max-device-width :780px) {
+
+   .mein_redeem_td {
+      overflow: hidden;
+      padding: 0 2%;
+      width: 96%;
+   }
+}
+
+@media only screen and (min-device-width :321px) and (max-device-width :620px) {
+   .mein_redeem_td {
+      overflow: hidden;
+      padding: 0 2%;
+      width: 96%;
+   }
+
+   .locate_box {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      padding: 10px 0 0;
+      width: 100%;
+   }
+
+   .locate_state {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin-top: 13px;
+      width: 83%;
+   }
+
+
+   .locate_city {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin: 16px 0 0;
+      width: 83%;
+   }
+
+   .locate_go {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin: 10px 0 0 0px;
+      width: 30%;
+   }
+   .redeem_row1 {
+      background: url("../images/redeem_row1.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+      float: left;
+      height: 190px;
+      margin: 0 4px 0 0;
+      width: 100%;
+   }
+   .row_content {
+      color: #000000;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      padding: 0 10px 0 10px;
+      width: 42%;
+      margin: 0 auto;
+      display: block;
+   }
+
+      .row_content h1 {
+         color: #000000;
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         padding: 14px 0 31px;
+      }
+}
+
+@media only screen and (max-width:320px) {
+   .mein_redeem_td {
+      overflow: hidden;
+      padding: 0 2%;
+      width: 96%;
+   }
+
+   .locate_box {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      padding: 10px 0 0;
+      width: 100%;
+   }
+
+   .locate_state {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin-top: 13px;
+      width: 83%;
+   }
+
+
+   .locate_city {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin: 16px 0 0;
+      width: 83%;
+   }
+
+   .locate_go {
+      color: #000;
+      float: left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin: 10px 0 0 0px;
+      width: 30%;
+   }
+
+   .redeem_row1 {
+      background: url("../images/redeem_row1.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+      float: left;
+      height: 190px;
+      margin: 0 4px 0 0;
+      width: 100%;
+   }
+   .row_content {
+      color: #000000;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      padding: 0 10px 0 10px;
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+   }
+
+      .row_content h1 {
+         color: #000000;
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         padding: 16px 0 28px;
+      }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Dependent Dropdown</title>
+
+<script type="text/javascript">
+   function PopulateState(ddlState_id) {
+      var option_str = document.getElementById(ddlState_id);
+      option_str.length = 0;
+      option_str.options[0] = new Option('Select State', '');
+      option_str.selectedIndex = 0;
+      for (var i = 0; i < ddlState_arr.length; i++) {
+         option_str.options[option_str.length] = new Option(ddlState_arr[i], ddlState_arr[i]);
+      }
+   }
+
+   function PopulateCity(ddlCity_id, ddlCity_index) {
+      var option_str = document.getElementById(ddlCity_id);
+      option_str.length = 0;
+      option_str.options[0] = new Option('Select City', '');
+      option_str.selectedIndex = 0;
+      var ddlCity_arr = s_a[ddlCity_index].split("|");
+      for (var i = 0; i < ddlCity_arr.length; i++) {
+         option_str.options[option_str.length] = new Option(ddlCity_arr[i], ddlCity_arr[i]);
+      }
+   }
+</script>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/grid.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/dropdown.js"></script>
+</head>
+
+<body>
+<div class="redemptin_wraper">
+   <div class="mein_redeem_td">
+      <div class="redeem_td">
+         <div class="locate_box" id="goto">Select your State & City:</div>
+         <form id="form1" name="form1" method="post" action="">
+            <div class="locate_state">
+               <select onChange="PopulateCity('ddlCity',this.selectedIndex);" id="ddlState" name="ddlState">
+               </select>
+
+            </div>
+            <div class="locate_city">
+               <select name="ddlCity" id="ddlCity">
+                  <option value="">Select City</option>
+               </select>
+               <script type="text/javascript">PopulateState("ddlState");</script>
+            </div>
+         </form>
+         <div class="locate_go">
+            <a href="javascript:void(0);" onClick="myFunction()">
+               <img src="images/go_bt.jpg" alt="Go" /></a>
+         </div>
+      </div>
+   </div>
+</div>
+   <div id="demo"></div>
+   <script type="text/javascript">
+      var vDdlValue = "";
+		var myArray;
+      function myFunction() {
+         vDdlValue = document.getElementById("ddlCity").value;
+         //alert(vDdlValue)
+         var vAllText = "";
+         var vTop = "";
+         var vString = "";
+         var vBottom = "";
+			
+         
+         vTop += "<div class='redeem_table'><div class='redeem_table_content'>";
+
+
+         var i;
+         var x = 0;
+         for (i = 0; i < myArray.length; i++) {
+            if (vDdlValue == myArray[i].City) {
+               x = x + 1;
+               vString += " <div class='redeem_row1'><div class='row_content'>";
+               vString += " <h1>" + myArray[i].Store + "</h1>";
+               vString += " <p>" + myArray[i].Address + "</p>";
+               vString += " </div></div>";
+            }
+         }
+         vBottom += "</div></div>";
+         //alert(vString);
+         if (vString != "") {
+            vAllText = vTop + vString + vBottom;
+         }
+         else {
+            vAllText = "Please select the 'State', 'City' and click on 'Go' button.";
+         }
+         document.getElementById("demo").innerHTML = vAllText;
+      }
+   </script>
+</body>
+</html>
